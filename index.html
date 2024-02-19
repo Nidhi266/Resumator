@@ -1,0 +1,208 @@
+<!-- Commented out the DOCTYPE declaration -->
+<!--<!DOCTYPE html>-->
+
+<html>
+
+<head>
+
+  <title> Resumator </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Resumator">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+  <!-- Removed the following script link -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- PDF.js library for PDF rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.336/pdf.min.js"></script>
+
+  <!-- mammoth.js library for Word document parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
+
+  <!-- Removed the following script link -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
+  <style>
+    #response1 {
+      width: 1000px;
+      height: 500px;
+      background-color: #FAF9F6;
+    }
+    #response2 {
+      width: 1000px;
+      height: 500px;
+      background-color: #FAF9F6;
+    }
+    #response3 {
+      width: 1000px;
+      height: 500px;
+      background-color: #FAF9F6;
+    }
+  </style>
+
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Resumator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link btn_menu" screen_name="home" href="#/home">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn_menu" screen_name="about" href="#/about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link btn_menu" screen_name="Create" href="#/Create">Create</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link btn_menu" screen_name="Resume_Review" href="#/Resume_Review">Resume_Review</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container" style="padding-top:20px;" >
+  <div class="row card ">
+
+    <div class="screen_name text-center text-uppercase  " style="font-size: 70px;"></div>
+
+    <div class="col-xl-12  screen_data"></div>
+
+  </div>
+</div>
+<div style="display:none;" class="screens">
+
+  <!--[Resume_review > start]-->
+  <div class="screen_Resume_Review">
+    <div class=" container">
+      <section class="front_page">
+        <div class="main_div1">
+          <div class="front_info">
+            <p class="lead">
+              Be sure with professional reviewer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="row" id="Form1">
+        <div class="col">
+          <div class="container-fluid">
+            <div class="row">
+              <div id="accordion1">
+                <div class="card" style="width: 65rem;" >
+                  <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+                    <div class="card-body">
+                      <div class="form1-row">
+                        <div class="position-relative">
+                          <div class="form1-group col-xl-10" >
+                            <h3>Basic Details</h3>
+                            <label for="user_Your_email_address">Your email address</label>
+                            <input type="text"   class="form1-control user_Your_email_address" name="Name" id="user_Your_email_address" data-rule="minlen:4" />
+                            <div class="validate"></div>
+                          </div>
+                          <button type="button" class="btn btn-primary" onclick="Submit()">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--[home > end]-->
+
+  <!--[Resume Review > start]-->
+  <div class="screen_home">
+    <div class="text-center">
+      <h1 class="mt-5">Resumator</h1>
+
+      <img src="https://placeimg.com/640/480/people">
+      <p class="lead">Welcome to Resumator!</p>
+    </div>
+  </div>
+  <!--[Resume Review > end]-->
+
+  <!--[About > start]-->
+
+  <div class="screen_about">
+
+    <img src="https://placeimg.com/640/480/nature">
+
+    <h1></h1>
+    <h2></h2>
+    <p>resumator.</p>
+
+    <p>Welcome to resumator .</p>
+
+    <h2></h2>
+    <p>.</p>
+  </div>
+
+  <!--[About > end]-->
+  <!--[Create > start]-->
+  <!-- resume templete selection  -->
+  <div class="screen_Create">
+    <div class="  container ">
+      <div class="row ">
+        <div class="col-12">
+          <div class="tab-pane active" id="Type">
+            <div class="container ">
+              <div class="row card ">
+                <div class="screen_name text-center text-uppercase  " style="font-size: 70px;">Create</div>
+                <div class="col-xl-12  screen_data">
+                  <h1 class="mt-5"> Create a Resume </h1>
+                  <p class="lead"> Welcome to Resumator!</p>
+
+                  <!-- File Upload -->
+                  <form id="fileForm" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="resumeFile">Upload your resume</label>
+                      <input type="file" class="form-control-file" id="resumeFile" name="resumeFile">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--[Create > end]-->
+  </div>
+
+</body>
+
+</html>
