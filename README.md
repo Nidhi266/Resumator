@@ -1,7 +1,7 @@
 # Resumator 
 [Visit Resumator](https://script.google.com/macros/s/AKfycbzJPKC5pGiMIloRCWl-Gm5tqTZBR8kRnIYWOhcSn4cGGwojofrEtr39X9W-CqVrpPi8Mw/exec)
 
-[HowToVideo Resumator]([https://drive.google.com/file/d/1Ql8ybW_FadyM-oJnGm5-yvUKVO-a6O8g/view?usp=sharing]
+[HowToVideo Resumator](https://drive.google.com/file/d/1Ql8ybW_FadyM-oJnGm5-yvUKVO-a6O8g/view?usp=sharing)
 
 
 
