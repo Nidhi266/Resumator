@@ -1,6 +1,10 @@
 # Resumator 
 [Visit Resumator](https://script.google.com/macros/s/AKfycbzJPKC5pGiMIloRCWl-Gm5tqTZBR8kRnIYWOhcSn4cGGwojofrEtr39X9W-CqVrpPi8Mw/exec)
 
+[HowToVideo Resumator]([https://script.google.com/macros/s/AKfycbzJPKC5pGiMIloRCWl-Gm5tqTZBR8kRnIYWOhcSn4cGGwojofrEtr39X9W-CqVrpPi8Mw/exec](https://drive.google.com/file/d/1Ql8ybW_FadyM-oJnGm5-yvUKVO-a6O8g/view?usp=sharing))
+
+
+
 Resumator is a project I developed to automate the resume creation process and provide users with valuable feedback through both human and chatbot interfaces. It aims to simplify the task of resume generation by offering a user-friendly interface and interactive feedback.
 
 Key Features:
